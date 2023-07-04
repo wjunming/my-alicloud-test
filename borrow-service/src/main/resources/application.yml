@@ -1,0 +1,15 @@
+server:
+  port: 8301
+spring:
+  application:
+    name: borrow-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/cloud-0701?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+        ephemeral: false
